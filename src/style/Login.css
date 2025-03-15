@@ -1,0 +1,126 @@
+/* Login.css */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .login-container button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .login-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .login-container button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .login-container button.submitting {
+    background-color: #999;
+    cursor: wait;
+  }
+  
+  .forgot-password {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .forgot-password-link {
+    color: #2196f3;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .login-method-toggle {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .login-method-toggle button {
+    flex: 1;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-method-toggle button.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .login-method-toggle button:hover:not(.active) {
+    background-color: #e0e0e0;
+  }
+  
+  .login-container form p {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #555;
+  }
+  
+  .otp-input {
+    letter-spacing: 4px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .redirect-message {
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+    color: #1890ff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  

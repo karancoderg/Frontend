@@ -1,0 +1,58 @@
+/* Navbar Styles */
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Links */
+.navbar a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Underline Hover Effect */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ff6b6b;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Logout Button */
+.navbar button {
+  background: linear-gradient(135deg, #ff6b6b, #ff4757);
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.navbar button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 75, 75, 0.4);
+}

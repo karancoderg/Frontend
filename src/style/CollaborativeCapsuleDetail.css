@@ -1,0 +1,178 @@
+.collab-capsule-detail {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .collab-capsule-detail h2,
+  .collab-capsule-detail h3 {
+    text-align: center;
+    color: #1e3c72;
+  }
+  
+  .capsule-locked {
+    text-align: center;
+    margin: 1rem 0;
+    color: #ff4757;
+  }
+  
+  .capsule-unlocked {
+    margin: 1rem 0;
+  }
+  
+  .media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0.5rem;
+  }
+  
+  .capsule-media, .entry-media {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  
+  .entry-form {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .entry-form textarea {
+    padding: 0.75rem;
+    resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .entry-form input[type="date"],
+  .entry-form input[type="file"] {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .entry-form button {
+    padding: 0.75rem;
+    background-color: #1e3c72;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .entry-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .entry-node {
+    background: #f7f7f7;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  /* Add styles for the submitting state */
+
+  .add-entry-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+
+  .add-entry-section h3 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .add-entry-section form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-entry-section textarea {
+    min-height: 120px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+  }
+
+  .add-entry-section input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .add-entry-section button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .add-entry-section button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+
+  .add-entry-section button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  .add-entry-section button.submitting {
+    background-color: #999;
+    cursor: wait;
+    position: relative;
+  }
+
+  .add-entry-section button.submitting::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 10px;
+    margin-top: -10px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .error-message {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .success-message {
+    background-color: #e8f5e9;
+    color: #388e3c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  

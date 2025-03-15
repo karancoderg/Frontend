@@ -1,0 +1,48 @@
+.collab-capsule-tree {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.collab-capsule-tree h2 {
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+}
+
+.collab-capsule {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.capsule-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.capsule-title-link {
+  text-decoration: none;
+  color: #1e3c72;
+}
+
+.capsule-title-link h3 {
+  margin: 0;
+}
+
+.capsule-lock-info {
+  font-size: 0.9rem;
+  color: #ff4757;
+  margin-top: 0.3rem;
+}
+
+.capsule-members {
+  font-size: 0.95rem;
+  color: #333;
+}

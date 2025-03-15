@@ -1,0 +1,148 @@
+.personal-capsule-tree {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.personal-capsule-tree:hover {
+    transform: scale(1.02);
+}
+
+.personal-capsule-tree h2 {
+    text-align: center;
+    color: #1e3c72;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.tree-summary {
+    display: flex;
+    justify-content: space-evenly;
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tree-summary p {
+    color: #1e3c72;
+    margin: 0;
+}
+
+.tree-container {
+    margin-top: 1.5rem;
+}
+
+.tree-branch {
+    margin-bottom: 1.5rem;
+}
+
+.tree-branch h3 {
+    background: #1e3c72;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.tree-branch ul {
+    list-style-type: none;
+    padding-left: 2rem;
+    margin: 0;
+}
+
+.tree-leaf {
+    margin-bottom: 0.8rem;
+}
+
+.capsule-node {
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f7;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.capsule-node:hover {
+    background: #eef2f7;
+}
+
+.capsule-title {
+    font-weight: bold;
+    color: #2a5298;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.capsule-timer {
+    font-size: 0.9rem;
+    color: #ff4757;
+    font-weight: bold;
+}
+
+.unlocked-label {
+    font-size: 0.9rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.capsule-content {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Styling for media content */
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.capsule-media {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+video.capsule-media {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .personal-capsule-tree {
+        padding: 1rem;
+    }
+
+    .tree-summary {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .tree-branch ul {
+        padding-left: 1rem;
+    }
+
+    .capsule-node {
+        padding: 0.7rem;
+    }
+
+    .capsule-title {
+        font-size: 1rem;
+    }
+}
